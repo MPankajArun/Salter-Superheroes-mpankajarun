@@ -1,0 +1,47 @@
+.Modal {
+    position: absolute;
+    z-index: 500;
+    background: rgb(14,31,117);
+    background: radial-gradient(circle, rgba(14,31,117,1) 0%, rgba(40,40,42,1) 100%);
+    width: 60%;
+    box-shadow: 1px 1px 1px black;
+    left: 20%;
+    top: 2rem;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+    margin-bottom: 2rem;
+    animation: fadeinout 0.5s linear forwards;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+@keyframes fadeinout{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .Modal {
+        top: 1rem;
+        width: 98%;
+        left: 2%;
+    }
+}
+
+.Cross{
+    position: absolute;
+    font-weight: bold;
+    font-size: 180%;
+    color: lightgrey;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.Cross:hover{
+    color: crimson;
+}

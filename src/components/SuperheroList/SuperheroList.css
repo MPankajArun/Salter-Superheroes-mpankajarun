@@ -1,0 +1,33 @@
+.SuperheroList{
+    text-align: center;
+    display: inline-block;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #f5f5f5;
+}
+
+.SuperheroList:hover{
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.7);
+}
+
+.SuperheroList > img {
+    height: 18rem;
+    padding: 1px;
+    border-radius: 5px;
+    width: 15rem;
+}
+.SuperheroList > img:hover {
+    height: 19rem;
+    padding: 1px;
+    border-radius: 5px;
+    width: 15rem;
+}
+
+.SuperheroList > h2 {
+    overflow-wrap: break-word;
+    text-transform: capitalize;
+}
