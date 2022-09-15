@@ -83,7 +83,6 @@ class Home extends Component{
     }
 
     cardClickHandler = (e) => {
-
         for(let i = 0; i<this.state.superheroData.length; i++){
             if(this.state.superheroData[i].id === e.target.id){
              this.setState({superheroDetails: this.state.superheroData[i], showDetails:true});           

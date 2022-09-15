@@ -9,13 +9,8 @@ const button = (props) => {
     return(
         
     <div onClick={props.clicked} className="container">
-        
-       <img src='https://kapownoodlebar.com/wp-content/uploads/2017/05/kapow-logo.png'alt='pic'/>
-          
-        
-        
+        <img src='https://kapownoodlebar.com/wp-content/uploads/2017/05/kapow-logo.png'alt='pic'/>  
         <span className="Text">{loadingText}</span> 
-        
     </div>
 
 )}

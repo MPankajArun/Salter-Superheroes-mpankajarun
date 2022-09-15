@@ -19,26 +19,6 @@
     color: greenyellow;
 }
 
-.Home > h1{
-    /* background-color: rgba(0, 0, 0, 0.651); */
-    color: rgb(22, 24, 24);
-    margin: 2rem auto;
-    border-radius: 20px;
-    width: 50rem;
-    padding: 0.5rem;
-    text-transform: capitalize;
-
-}
-
-.Home > h1 {
-    color: black;
-    /* font-family: 'Permanent Marker'; */
-    text-shadow: 4px 4px 4px black;
-    font-weight: bold;
-    font-size: 5rem;
-    cursor: pointer;
-}
-
 
 @media (max-width: 600px){
     .Home > h1{

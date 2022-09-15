@@ -7,7 +7,6 @@ const superHero = (props) => {
     <div className="Superhero">
         <h1>{props.details.name}</h1>
          <img src={props.details.image.url} alt={props.details.name} /> 
-        {/* <h2>Powerstats</h2> */}
         <div className="powerstat-container">
             <h2>Powerstats</h2>
             {Object.entries(props.details.powerstats).map((entry,i) => {
