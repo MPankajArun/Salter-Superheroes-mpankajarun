@@ -28,12 +28,13 @@ class Home extends Component{
         }
 
         const API_KEY = process.env.REACT_APP_API_KEY;
+        const API_URL = process.env.REACT_APP_API_URL;
 
         const getInitialFetchList = () => {
             const fetchList = [];
             for(let i = 0; i< 20;i++) {
                 fetchList.push(
-                    fetch(`https://www.superheroapi.com/api.php/${API_KEY}/${Math.floor(Math.random() * 730)}`)
+                    fetch(`${API_URL}${API_KEY}/${Math.floor(Math.random() * 730)}`)
                 );
             }
             return fetchList;
@@ -69,8 +70,8 @@ class Home extends Component{
         this.setState({superheroData: null});
 
         const API_KEY = process.env.REACT_APP_API_KEY;
-
-        const url = `https://www.superheroapi.com/api.php/${API_KEY}/search/${this.state.superheroName}`;
+        const API_URL = process.env.REACT_APP_API_URL;
+        const url = `${API_URL}${API_KEY}/search/${this.state.superheroName}`;
         fetch(url).then(response =>{
             response.json().then(data =>{
                 this.setState({superheroData: data.results ,superheroName: ""});
